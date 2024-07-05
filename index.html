@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Иконки Bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./style.css">
+	<title>Edisson Group</title>
+</head>
+<!--  -->
+<body class="bg-[#BAA388]">
+	<!-- Для динамичеких классов -->
+	<span class="opacity-0 hover:-translate-y-2"></span>
+	<!-- Шапка сайта -->
+	<header class="sticky top-0 left-0 right-0 pt-2">
+		<div class="container mx-auto px-2 md:px-0">
+			<div class="py-4 rounded-3xl shadow-lg glassmorphism-btn">
+				<div class="px-12 flex flex-wrap justify-between items-center lg:flex-nowrap">
+					<img class="max-h-16" src="./images/logo.png" alt="" class="logo">
+					<div class="block transition-all space-y-1.5 cursor-pointer group hover:space-y-2 lg:hidden" aria-controls="mobile-menu" aria-expanded="false" data-menu-btn>
+						<div class="transition-all w-8 h-0.5 bg-white group-hover:w-9"></div>
+						<div class="transition-all w-8 h-0.5 bg-white group-hover:w-9"></div>
+						<div class="transition-all w-8 h-0.5 bg-white group-hover:w-9"></div>
+					</div>
+					<div class="mt-12 transition-opacity duration-300 hidden w-full lg:w-auto lg:block lg:opacity-100 lg:mt-0" data-menu-element>
+						<nav class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+							<a class="glassmorphism-btn rounded-lg shadow-md transition-all text-center text-white text-xl py-2 px-4 hover:bg-white hover:text-slate-950" href="#">Главная</a>
+							<a class="glassmorphism-btn rounded-lg shadow-md transition-all text-center text-white text-xl py-2 px-4 hover:bg-white hover:text-slate-950" href="#">Каталог</a>
+							<a class="glassmorphism-btn rounded-lg shadow-md transition-all text-center text-white text-xl py-2 px-4 hover:bg-white hover:text-slate-950" href="#">Монтаж</a>
+							<a class="glassmorphism-btn rounded-lg shadow-md transition-all text-center text-white text-xl py-2 px-4 hover:bg-white hover:text-slate-950" href="#">Галерея</a>
+							<a class="glassmorphism-btn rounded-lg shadow-md transition-all text-center text-white text-xl py-2 px-4 hover:bg-white hover:text-slate-950" href="#">О нас</a>
+							<a class="glassmorphism-btn rounded-lg shadow-md transition-all text-center text-white text-xl py-2 px-4 hover:bg-white hover:text-slate-950" href="#">Блог</a>
+						</nav>
+					</div>
+					
+					<div class="transition-opacity duration-300 hidden mt-12 ml-auto lg:hidden lg:mt-0 lg:w-auto lg:opacity-100 xl:ml-0 xl:block" data-menu-element>
+						<div class="flex justify-between gap-2 md:gap-4">
+							<i class="bi bi-telegram text-white cursor-pointer transition-all text-4xl hover:text-slate-300"></i>
+							<i class="bi bi-whatsapp text-white cursor-pointer transition-all text-4xl hover:text-slate-300"></i>
+							<p class="text-black bg-white text-lg py-2 px-4 rounded-full">+7-961-341-35-34</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+	<!-- Главная секция сайта 1-й блок -->
+	<main>
+		<div class="container mx-auto mt-2 mb-24 px-2 md:px-0 md:mt-8">
+			<div class="carousel">
+				<div class="carousel-list">
+					<div class="carousel-list_item">
+						<img loading="lazy" src="/images/main-slides/termopanely.webp" alt="Термопанели от edisson group">
+						<div class="content pr-[0%] md:pr-[25%]">
+							<h1 class="text-white font-bold text-3xl md:text-6xl max-w-[1050px]">Термопанели от производителя в Чебоксарах</h1>
+							<p class="text-slate-200 text-lg md:text-xl mt-8">Успейте заказать от 1700 рублей за м<sup>2</sup></p>
+							<button class="py-4 px-8 text-white bg-brand rounded-full mt-16 text-lg transition-[background-color] hover:bg-white hover:text-slate-950 md:text-2xl" data-open-modal="contact-modal">Оставить заявку</button>
+						</div>
+					</div>
+					<div class="carousel-list_item">
+						<img loading="lazy"  src="/images/main-slides/gKamen.webp" alt="Термопанели от edisson group">
+						<div class="content pr-[0%] md:pr-[25%]">
+							<h1 class="text-white font-bold text-3xl md:text-6xl max-w-[1050px]">Гибкий камень от производителя в Чебоксарах</h1>
+							<p class="text-slate-200 text-lg md:text-xl mt-8">Успейте заказать от 1700 рублей за м<sup>2</sup></p>
+							<button class="py-4 px-8 text-white bg-brand rounded-full mt-16 text-lg transition-[background-color] hover:bg-white hover:text-slate-950 md:text-2xl" data-open-modal="contact-modal">Оставить заявку</button>
+						</div>
+					</div>
+					<div class="carousel-list_item">
+						<img loading="lazy"  src="/images/main-slides/gKirpich.webp" alt="Термопанели от edisson group">
+						<div class="content pr-[0%] md:pr-[25%]">
+							<h1 class="text-white font-bold text-3xl md:text-6xl max-w-[1050px]">Гибкий кирпич от производителя в Чебоксарах</h1>
+							<p class="text-slate-200 text-lg md:text-xl mt-8">Успейте заказать от 1700 рублей за м<sup>2</sup></p>
+							<button class="py-4 px-8 text-white bg-brand rounded-full mt-16 text-lg transition-[background-color] hover:bg-white hover:text-slate-950 md:text-2xl" data-open-modal="contact-modal">Оставить заявку</button>
+						</div>
+					</div>
+					<div class="carousel-list_item">
+						<img loading="lazy"  src="/images/main-slides/kOboi.webp" alt="Термопанели от edisson group">
+						<div class="content pr-[0%] md:pr-[25%]">
+							<h1 class="text-white font-bold text-3xl md:text-6xl max-w-[1050px]">Гибкие обои от производителя в Чебоксарах</h1>
+							<p class="text-slate-200 text-lg md:text-xl mt-8">Успейте заказать от 1700 рублей за м<sup>2</sup></p>
+							<button class="py-4 px-8 text-white bg-brand rounded-full mt-16 text-lg transition-[background-color] hover:bg-white hover:text-slate-950 md:text-2xl" data-open-modal="contact-modal">Оставить заявку</button>
+						</div>
+					</div>
+					<div class="carousel-list_item">
+						<img loading="lazy"  src="/images/main-slides/decor.webp" alt="Термопанели от edisson group">
+						<div class="content pr-[0%] md:pr-[25%]">
+							<h1 class="text-white font-bold text-3xl md:text-6xl max-w-[1050px]">Фасадный декор от производителя в Чебоксарах</h1>
+							<p class="text-slate-200 text-lg md:text-xl mt-8">Успейте заказать от 1700 рублей за м<sup>2</sup></p>
+							<button class="py-4 px-8 text-white bg-brand rounded-full mt-16 text-lg transition-[background-color color] hover:bg-white hover:text-slate-950 md:text-2xl" data-open-modal="contact-modal">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="thumbnail_item">
+						<img loading="lazy"  src="/images/main-slides/gKamen.webp" alt="Термопанели от edisson group">
+						<p class="text-white text-lg md:text-xl">Гибкий камень</p>
+					</div>
+					<div class="thumbnail_item">
+						<img loading="lazy"  src="/images/main-slides/gKirpich.webp" alt="Термопанели от edisson group">
+						<p class="text-white text-lg md:text-xl">Гибкий кирпич</p>
+					</div>
+					<div class="thumbnail_item">
+						<img loading="lazy"  src="/images/main-slides/kOboi.webp" alt="Термопанели от edisson group">
+						<p class="text-white text-lg md:text-xl">Гибкие обои</p>
+					</div>
+					<div class="thumbnail_item">
+						<img loading="lazy"  src="/images/main-slides/decor.webp" alt="Термопанели от edisson group">
+						<p class="text-white text-lg md:text-xl">Фасадный декор</p>
+					</div>
+					<div class="thumbnail_item">
+						<img loading="lazy"  src="/images/main-slides/termopanely.webp" alt="Термопанели от edisson group">
+						<p class="text-white text-lg md:text-xl">Термопанели</p>
+					</div>
+				</div>
+				<div class="mainSlider-timer"></div>
+				<div class="arrows">
+					<button id="main-slider_prev"><</button>
+					<button id="main-slider_next">></button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Секция ПОЧЕМУ МЫ 2-й блок, ЗАМЕНИТЬ ИКОНКИ -->
+	<section>
+		<div class="container mx-auto px-2 py-24 md:px-0">
+			<h2 class="inline-block font-bold text-2xl md:text-4xl p-6 text-white glassmorphism rounded-xl shadow-lg">6 причин заказать фасад в Edisson Group</h2>
+			<div class="why-us-container mt-16 gap-12 md:gap-16">
+				<div class="glassmorphism-btn rounded-xl shadow-lg p-6">
+					<i class="bi bi-house-gear text-slate-200 text-5xl"></i>
+					<h3 class="text-white font-bold text-xl my-4 md:my-4 md:text-2xl">Монтаж под ключ</h3>
+					<p class="text-slate-200 text-lg md:text-xl">
+						К вам приедет не просто бригада, а профессионалы своего дела, которые занимаются монтажем фасада не первый год.
+						Осуществим монтаж под ключ по цене от 1100 рублей за м<sup>2</sup>. Так же вы можете провести монтаж самостоятельно.
+					</p>
+				</div>
+				<div class="glassmorphism-btn rounded-xl shadow-lg p-6">
+					<i class="bi bi-truck text-slate-200 text-5xl"></i>
+					<h3 class="text-white font-bold text-xl my-4 md:my-4 md:text-2xl">Бесплатная доставка</h3>
+					<p class="text-slate-100 text-lg md:text-xl">
+						Доставим панели к вамему объекту за один день в целости и сохраности. 
+						Можете начинать работы в этот же день.
+					</p>
+				</div>
+				<div class="glassmorphism-btn rounded-xl shadow-lg p-6">
+					<i class="bi bi-clock-history text-slate-200 text-5xl"></i>
+					<h3 class="text-white font-bold text-xl my-4 md:my-4 md:text-2xl">Изготовление - до 2 недель</h3>
+					<p class="text-slate-100 text-lg md:text-xl">
+						Произведем панели в нужном объеме точно к сроку.
+						Вы можете планировать заранее сроки готовности панелей, их монтаж, а так же готовность работ.
+					</p>
+				</div>
+				<div class="glassmorphism-btn rounded-xl shadow-lg p-6">
+					<i class="bi bi-shield-check text-slate-200 text-5xl"></i>
+					<h3 class="text-white font-bold text-xl my-4 md:my-4 md:text-2xl">Понятные гарантии</h3>
+					<p class="text-slate-100 text-lg md:text-xl">
+						Гарантия на термопанели - 50 лет. 
+						Если что-то происходит с термопанелями на вашем доме, то их замена за наш счет.
+					</p>
+				</div>
+				<div class="glassmorphism-btn rounded-xl shadow-lg p-6">
+					<i class="bi bi-palette text-slate-200 text-5xl"></i>
+					<h3 class="text-white font-bold text-xl my-4 md:my-4 md:text-2xl">Широкая линейка панелей</h3>
+					<p class="text-slate-100 text-lg md:text-xl">
+						Изготовим панели любого цвета, которые представлены в каталоге.
+						Так же вам на выбор раличные виды поверностей: мрамор, дикий камень, кирпич, мозаика и тд.
+					</p>
+				</div>
+				<!-- Тут надо иконку заменить -->
+				<div class="glassmorphism-btn rounded-xl shadow-lg p-6">
+					<i class="bi bi-gem text-slate-200 text-5xl"></i>
+					<h3 class="text-white font-bold text-xl my-4 md:my-4 md:text-2xl">Премиальный сервис</h3>
+					<p class="text-slate-100 text-lg md:text-xl">
+						Вы не будете нервничать, куда мы пропали, и где ваши панели.
+						У нас всё под контролем. Оповещаем по WhatsApp, на каком этапе проект.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Секция ВИЗУАЛИЗАТОР 3-й блок -->
+	<section class="relative z-20">
+		<div class="container mx-auto px-2 py-24 md:px-0">
+			<h2 class="inline-block font-bold text-2xl md:text-4xl p-6 text-white glassmorphism rounded-xl shadow-lg">Соберите фасад своей мечты</h2>
+			<div class="mt-16 xl:flex xl:items-stretch xl:gap-12">
+			<!-- Картинки ДОХУЯ ЛУЧШЕ НЕ ОТКРЫВАТЬ -->
+				<div class="relative overflow-hidden rounded-3xl">
+					<img loading="lazy" class="w-full xl:max-w-4xl 2xl:max-w-6xl" src="/images/model/base.jpg" alt="">
+
+					<!-- Крыши -->																
+					<img loading="lazy" src="/images/model/k/1015.png" alt="вариант крыши" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="k" data-c="RAL-1015">
+					<img loading="lazy" src="/images/model/k/1018.png" alt="вариант крыши" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="k" data-c="RAL-1018">
+					<img loading="lazy" src="/images/model/k/2004.png" alt="вариант крыши" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="k" data-c="RAL-2004">
+					<img loading="lazy" src="/images/model/k/3003.png" alt="вариант крыши" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="k" data-c="RAL-3003">
+					<img loading="lazy" src="/images/model/k/3005.png" alt="вариант крыши" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="k" data-c="RAL-3005">
+					<img loading="lazy" src="/images/model/k/3020.png" alt="вариант крыши" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="k" data-c="RAL-3020">
+					<img loading="lazy" src="/images/model/k/7024.png" alt="вариант крыши" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="k" data-c="RAL-7024">
+					<img loading="lazy" src="/images/model/k/8017.png" alt="вариант крыши" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="k" data-c="RAL-8017">
+
+					<!-- Стены -->
+
+					<img loading="lazy" src="/images/model/s/1014.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-1014">
+					<img loading="lazy" src="/images/model/s/1015.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-1015">
+					<img loading="lazy" src="/images/model/s/1018.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-1018">
+					<img loading="lazy" src="/images/model/s/1019.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-1019">
+					<img loading="lazy" src="/images/model/s/1034.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-1034">
+					<img loading="lazy" src="/images/model/s/2000.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-2000">
+					<img loading="lazy" src="/images/model/s/2001.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-2001">
+					<img loading="lazy" src="/images/model/s/2003.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-2003">
+					<img loading="lazy" src="/images/model/s/2004.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-2004">
+					<img loading="lazy" src="/images/model/s/2008.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-2008">
+					<img loading="lazy" src="/images/model/s/2010.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-2010">
+					<img loading="lazy" src="/images/model/s/2012.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-2012">
+					<img loading="lazy" src="/images/model/s/3003.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-3003">
+					<img loading="lazy" src="/images/model/s/3005.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-3005">
+					<img loading="lazy" src="/images/model/s/3011.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-3011">
+					<img loading="lazy" src="/images/model/s/3012.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-3012">
+					<img loading="lazy" src="/images/model/s/3016.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-3016">
+					<img loading="lazy" src="/images/model/s/3020.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-3020">
+					<img loading="lazy" src="/images/model/s/4004.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-4004">
+					<img loading="lazy" src="/images/model/s/5021.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-5021">
+					<img loading="lazy" src="/images/model/s/6003.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-6003">
+					<img loading="lazy" src="/images/model/s/6019.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-6019">
+					<img loading="lazy" src="/images/model/s/6021.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-6021">
+					<img loading="lazy" src="/images/model/s/7000.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7000">
+					<img loading="lazy" src="/images/model/s/7013.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7013">
+					<img loading="lazy" src="/images/model/s/7016.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7016">
+					<img loading="lazy" src="/images/model/s/7021.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7021">
+					<img loading="lazy" src="/images/model/s/7023.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7023">
+					<img loading="lazy" src="/images/model/s/7024.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7024">
+					<img loading="lazy" src="/images/model/s/7031.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7031">
+					<img loading="lazy" src="/images/model/s/7032.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7032">
+					<img loading="lazy" src="/images/model/s/7034.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7034">
+					<img loading="lazy" src="/images/model/s/7039.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-7039">
+					<img loading="lazy" src="/images/model/s/8017.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-8017">
+					<img loading="lazy" src="/images/model/s/8023.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-8023">
+					<img loading="lazy" src="/images/model/s/8028.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-8028">
+					<img loading="lazy" src="/images/model/s/9001.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-9001">
+					<img loading="lazy" src="/images/model/s/9005.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-9005">
+					<img loading="lazy" src="/images/model/s/9012.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-9012">
+					<img loading="lazy" src="/images/model/s/9016.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-9016">
+					<img loading="lazy" src="/images/model/s/702370_702330.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-702370_702330">
+					<img loading="lazy" src="/images/model/s/702470_702330.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-702470_702330">
+					<img loading="lazy" src="/images/model/s/802870_201330.png" alt="вариант термопанелей" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="s" data-c="RAL-802870_201330">
+
+																					
+					<!-- Швы -->
+					<img loading="lazy" src="/images/model/h/7021.png" alt="вариянт швов" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="h" data-c="RAL-7021">
+					<img loading="lazy" src="/images/model/h/7032.png" alt="вариянт швов" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="h" data-c="RAL-7032">
+					<img loading="lazy" src="/images/model/h/7039.png" alt="вариянт швов" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="h" data-c="RAL-7039">
+					<img loading="lazy" src="/images/model/h/8017.png" alt="вариянт швов" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="h" data-c="RAL-8017">
+					<img loading="lazy" src="/images/model/h/9003.png" alt="вариянт швов" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="h" data-c="RAL-9003">
+
+					<!-- Цоколь -->
+					<img loading="lazy" src="/images/model/c/1001.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-1001">
+					<img loading="lazy" src="/images/model/c/1014.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-1014">
+					<img loading="lazy" src="/images/model/c/1015.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-1015">
+					<img loading="lazy" src="/images/model/c/1018.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-1018">
+					<img loading="lazy" src="/images/model/c/1019.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-1019">
+					<img loading="lazy" src="/images/model/c/1034.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-1034">
+					<img loading="lazy" src="/images/model/c/2000.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-2000">
+					<img loading="lazy" src="/images/model/c/2001.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-2001">
+					<img loading="lazy" src="/images/model/c/2003.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-2003">
+					<img loading="lazy" src="/images/model/c/2004.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-2004">
+					<img loading="lazy" src="/images/model/c/2008.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-2008">
+					<img loading="lazy" src="/images/model/c/2010.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-2010">
+					<img loading="lazy" src="/images/model/c/2012.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-2012">
+					<img loading="lazy" src="/images/model/c/3003.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-3003">
+					<img loading="lazy" src="/images/model/c/3005.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-3005">
+					<img loading="lazy" src="/images/model/c/3011.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-3011">
+					<img loading="lazy" src="/images/model/c/3012.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-3012">
+					<img loading="lazy" src="/images/model/c/3016.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-3016">
+					<img loading="lazy" src="/images/model/c/3020.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-3020">
+					<img loading="lazy" src="/images/model/c/4004.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-4004">
+					<img loading="lazy" src="/images/model/c/5021.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-5021">
+					<img loading="lazy" src="/images/model/c/6003.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-6003">
+					<img loading="lazy" src="/images/model/c/6019.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-6019">
+					<img loading="lazy" src="/images/model/c/6021.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-6021">
+					<img loading="lazy" src="/images/model/c/7000.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7000">
+					<img loading="lazy" src="/images/model/c/7013.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7013">
+					<img loading="lazy" src="/images/model/c/7016.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7016">
+					<img loading="lazy" src="/images/model/c/7021.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7021">
+					<img loading="lazy" src="/images/model/c/7023.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7023">
+					<img loading="lazy" src="/images/model/c/7024.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7024">
+					<img loading="lazy" src="/images/model/c/7031.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7031">
+					<img loading="lazy" src="/images/model/c/7032.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7032">
+					<img loading="lazy" src="/images/model/c/7034.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7034">
+					<img loading="lazy" src="/images/model/c/7039.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-7039">
+					<img loading="lazy" src="/images/model/c/8017.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-8017">
+					<img loading="lazy" src="/images/model/c/8023.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-8023">
+					<img loading="lazy" src="/images/model/c/8028.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-8028">
+					<img loading="lazy" src="/images/model/c/9001.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-9001">
+					<img loading="lazy" src="/images/model/c/9003.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-9003">
+					<img loading="lazy" src="/images/model/c/9005.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-9005">
+					<img loading="lazy" src="/images/model/c/9006.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-9006">
+					<img loading="lazy" src="/images/model/c/9016.png" alt="вариант цоколя" class="absolute top-0 left-0 w-full xl:max-w-4xl 2xl:max-w-6xl" data-t="c" data-c="RAL-9016">
+
+				</div>
+			<!-- Сами палитры ТОЖЕ ЛУЧШЕ НЕ ТРОГАТЬ МНОГО DATA-ДАННЫХ -->
+				<div class="glassmorphism flex-1 mt-12 grid pallete-container gap-12 flex-wrap bg-slate-100 rounded-xl p-12 shadow-md xl:mt-0 xl:block xl:gap-0 xl:space-y-12">
+					<details class="relative">
+						<summary class="glassmorphism-btn text-white text-lg rounded-lg bg-white py-2 px-4 shadow-md flex items-center justify-between md:text-xl transition-all cursor-pointer hover:bg-brand hover:text-white">
+							<div>Цвет крыши</div>
+							<div class="pulsed-dot"></div>
+						</summary>
+						<div class="glassmorphism pallete grid justify-between gap-2 absolute top-[150%] w-full left-0 z-[4] rounded-lg p-4 bg-white shadow-md" data-pallete-place="k">
+							<!-- Пустышка, чтобы классы сгенерировались в итоговый вариант -->
+							<span class="inline-block w-8 h-8 rounded-lg shadow-md cursor-crosshair pallete_node RAL-1014" data-pallete-t="k" data-c="RAL-1014"></span>
+						</div>
+					</details>
+					<details class="relative">
+						<summary class="glassmorphism-btn text-white text-lg rounded-lg bg-white py-2 px-4 shadow-md flex items-center justify-between md:text-xl transition-all cursor-pointer hover:bg-brand hover:text-white">
+							<div>Цвет кирпича</div>
+							<div class="pulsed-dot"></div>
+						</summary>
+						<div class="glassmorphism pallete grid justify-between gap-2 absolute top-[150%] w-full left-0 z-[3] rounded-lg p-4 bg-white shadow-md" data-pallete-place="s">
+						</div>
+					</details>
+					<details class="relative">
+						<summary class="glassmorphism-btn text-white text-lg rounded-lg bg-white py-2 px-4 shadow-md flex items-center justify-between md:text-xl transition-all cursor-pointer hover:bg-brand hover:text-white">
+							<div>Цвет швов</div>
+							<div class="pulsed-dot"></div>
+						</summary>
+						<div class="glassmorphism pallete grid justify-between gap-2 absolute top-[150%] w-full left-0 z-[2] rounded-lg p-4 bg-white shadow-md" data-pallete-place="h">
+							
+						</div>
+					</details>
+					<details class="relative">
+						<summary class="glassmorphism-btn text-white text-lg rounded-lg bg-white py-2 px-4 shadow-md flex items-center justify-between md:text-xl transition-all cursor-pointer hover:bg-brand hover:text-white">
+							<div>Цвет цоколя</div>
+							<div class="pulsed-dot"></div>
+						</summary>
+						<div class="glassmorphism pallete grid justify-between gap-2 absolute top-[150%] w-full left-0 z-[1] rounded-lg p-4 bg-white shadow-md" data-pallete-place="c">
+						</div>
+					</details>
+				</div>
+			</divс>
+		</div>
+	</section>
+	<!-- Секция МЫ ПРЕДЛОЖЕНИЯ 4-й блок -->
+	<section class="relative z-10">
+		<div class="container mx-auto px-2 py-24 md:px-0">
+			<h2 class="inline-block font-bold text-2xl md:text-4xl p-6 text-white glassmorphism rounded-xl shadow-lg">Мы работаем в следующих направлениях</h2>
+			<div class="offer-list mt-16 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+				<div class="group offer-list_item relative overflow-hidden shadow-lg rounded-xl cursor-pointer">
+					<img class="w-full h-full object-cover brightness-75 transition-all group-hover:scale-150" src="/images/offers/termopanel.png" alt="">
+					<div class="flex gap-4 justify-between items-center absolute bottom-4 left-[5%] p-4 rounded-full shadow-lg glassmorphism-btn cursor-pointer transition-all group-hover:left-[10%] group-hover:bg-brand">
+						<a class="text-white text-lg xl:text-2xl">Термопанели</a>
+						<div class="animated-arrow transition-all group-hover:translate-x-4 group-hover:scale-50"></div>
+					</div>
+				</div>
+				<div class="group offer-list_item relative overflow-hidden shadow-lg rounded-xl cursor-pointer">
+					<img class="w-full h-full object-cover brightness-75 transition-all group-hover:scale-150" src="/images/offers/gKirpich.png" alt="">
+					<div class="flex gap-4 justify-between items-center absolute bottom-4 left-[5%] p-4 rounded-full shadow-lg glassmorphism-btn cursor-pointer transition-all group-hover:left-[10%] group-hover:bg-brand">
+						<a class="text-white text-lg xl:text-2xl">Гибкий кирпич</a>
+						<div class="animated-arrow transition-all group-hover:translate-x-4 group-hover:scale-50"></div>
+					</div>
+				</div>
+				<div class="group offer-list_item relative overflow-hidden shadow-lg rounded-xl cursor-pointer">
+					<img class="w-full h-full object-cover brightness-75 transition-all group-hover:scale-150" src="/images/offers/gKamen.png" alt="">
+					<div class="flex gap-4 justify-between items-center absolute bottom-4 left-[5%] p-4 rounded-full shadow-lg glassmorphism-btn cursor-pointer transition-all group-hover:left-[10%] group-hover:bg-brand">
+						<a class="text-white text-lg xl:text-2xl">Гибкий камень</a>
+						<div class="animated-arrow transition-all group-hover:translate-x-4 group-hover:scale-50"></div>
+					</div>
+				</div>
+				<div class="group offer-list_item relative overflow-hidden shadow-lg rounded-xl cursor-pointer">
+					<img class="w-full h-full object-cover brightness-75 transition-all group-hover:scale-150" src="/images/offers/gDoska.png" alt="">
+					<div class="flex gap-4 justify-between items-center absolute bottom-4 left-[5%] p-4 rounded-full shadow-lg glassmorphism-btn cursor-pointer transition-all group-hover:left-[10%] group-hover:bg-brand">
+						<a class="text-white text-lg xl:text-2xl">Гибкая доска</a>
+						<div class="animated-arrow transition-all group-hover:translate-x-4 group-hover:scale-50"></div>
+					</div>
+				</div>
+				<div class="group offer-list_item relative overflow-hidden shadow-lg rounded-xl cursor-pointer">
+					<img class="w-full h-full object-cover brightness-75 transition-all group-hover:scale-150" src="/images/offers/gOboi.png" alt="">
+					<div class="flex gap-4 justify-between items-center absolute bottom-4 left-[5%] p-4 rounded-full shadow-lg glassmorphism-btn cursor-pointer transition-all group-hover:left-[10%] group-hover:bg-brand">
+						<a class="text-white text-lg xl:text-2xl">Каменные обои</a>
+						<div class="animated-arrow transition-all group-hover:translate-x-4 group-hover:scale-50"></div>
+					</div>
+				</div>
+				<div class="group offer-list_item relative overflow-hidden shadow-lg rounded-xl cursor-pointer">
+					<img class="w-full h-full object-cover brightness-75 transition-all group-hover:scale-150" src="/images/offers/decor.png" alt="">
+					<div class="flex gap-4 justify-between items-center absolute bottom-4 left-[5%] p-4 rounded-full shadow-lg glassmorphism-btn cursor-pointer transition-all group-hover:left-[10%] group-hover:bg-brand">
+						<a class="text-white text-lg xl:text-2xl">Архитектурный декор</a>
+						<div class="animated-arrow transition-all group-hover:translate-x-4 group-hover:scale-50"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Секция ПРИМЕРЫ РАБОТ 5-й блок -->
+	<section>
+		<div class="container mx-auto px-2 py-24 md:px-0">
+			<h2 class="inline-block font-bold text-2xl md:text-4xl p-6 text-white glassmorphism rounded-xl shadow-lg">Объекты, обшитые нашими термопанелями</h2>
+			<div class="mt-16 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 sm:row-span-2 md:row-span-1 md:col-span-2">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 ">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 md:row-span-2">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 sm:col-span-2 md:col-span-1">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 ">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 ">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 md:row-span-2">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 sm:row-span-2 md:row-span-1">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+				<div class="relative min-h-96 overflow-hidden rounded-xl shadow-md cursor-zoom-in col-span-1 row-span-1 ">
+					<img class="absolute rounded-xl shadow-md overflow-hidden top-0 left-0 object-cover w-full h-full min-h-96" src="/images/examples/1.jpg" alt="Примеры отделки дома термопанелями edisson group" data-open-modal="full-img" data-modal-dynamic-args='{ "img": "this" }''>
+				</div>
+			</div>
+			<div class="modal modal-hidden" data-modal-name="full-img">
+				<div class="modal-content glassmorphism rounded-xl shadow-lg">
+					<img class="modal-content_img" src="" alt="Примеры отделки дома термопанелями edisson group">
+				</div>
+
+				<div class="modal-content_lock glassmorphism-btn shadow-lg"></div>
+			</div>
+		</div>
+	</section>
+	<!-- Секция Последняя форма 6-й блок -->
+	<section>
+		<div class="container mx-auto px-2 py-24 md:px-0">
+			<h2 class="inline-block font-bold text-2xl md:text-4xl p-6 text-white glassmorphism rounded-xl shadow-lg">Остались вопросы?</h2>
+			<div class="mt-16 glassmorphism p-6 rounded-xl shadow-lg">
+				<p class="text-white text-xl md:text-2xl">Оставьте заявку и получите консультацию нашего специалиста в течение 10 минут!</p>
+				<form class="mt-12 grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3" action="">
+					<input class="border border-white text-white bg-transparent placeholder:text-slate-200 outline-none px-4 py-2 rounded-lg shadow-md text-lg md:text-xl" type="text" placeholder="Ваше имя...">
+					<input class="border border-white text-white bg-transparent placeholder:text-slate-200 outline-none px-4 py-2 rounded-lg shadow-md text-lg md:text-xl" type="text" placeholder="Номер телефона...">
+					<button class="border border-white bg-brand p-2 text-white rounded-lg shadow-md glassmorphism-nbg cursor-pointer transition-all text-lg hover:bg-white  hover:text-slate-950 md:text-xl">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- Футер 7-ой блок -->
+	<footer class="border-t-[1px]">
+		<div class="container mx-auto px-2 py-24 md:px-0">
+			<div class="w-full flex items-start justify-between gap-4 flex-col md:flex-row">
+				<div class="text-white">© Все права защищены "Edisson Group" 2023</div>
+				<div class="flex gap-2 md:gap-4">
+					<i class="bi bi-telegram text-white cursor-pointer transition-all text-4xl hover:text-slate-300"></i>
+					<i class="bi bi-whatsapp text-white cursor-pointer transition-all text-4xl hover:text-slate-300"></i>
+					<p class="text-black bg-white text-lg py-2 px-4 rounded-full">+7-961-341-35-34</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- МОДАЛКА ДЛЯ КОНТАКТА -->
+	<div class="modal modal-hidden" data-modal-name="contact-modal">
+		<div class="modal-content glassmorphism rounded-xl shadow-lg !max-w-xl">
+			<h2 class="text-white text-2xl text-center font-bold md:text-4xl">Пожалуйста, укажите свои контактные данные</h2>
+			<p class="mt-6 text-white text-xl text-center md:text-2xl">Мы свяжемся с вами в ближайшее время</p>
+			<form class="mt-12 grid gap-6 grid-cols-1" action="">
+				<input class="border border-white text-white bg-transparent placeholder:text-slate-200 outline-none px-4 py-2 rounded-lg shadow-md text-lg md:text-xl" type="text" placeholder="Ваше имя...">
+				<input class="border border-white text-white bg-transparent placeholder:text-slate-200 outline-none px-4 py-2 rounded-lg shadow-md text-lg md:text-xl" type="text" placeholder="Номер телефона...">
+				<button class="border border-white bg-brand p-2 text-white rounded-lg shadow-md glassmorphism-nbg cursor-pointer transition-all text-lg hover:bg-white hover:text-slate-950 md:text-xl">Отправить</button>
+			</form>
+		</div>
+		<div class="modal-content_lock glassmorphism-btn shadow-lg"></div>
+	</div>
+
+	<script src="/main.js"></script>
+</body>
+</html>
